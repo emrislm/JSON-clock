@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Adhaan Clock</title>
+    <link rel="stylesheet" type="text/css" href="adhaanclock.css">
+</head>
+<body onload="adhaanclock()">
+
+    <div id="time"></div>
+    <div id="times"></div>
+    <div id="action">
+        <select id="selection" onchange="adhaanclock()">
+            <option value="city=Houthalen&country=Belgium">Houthalen</option>
+            <option value="city=Pazar&country=Turkey">Pazar</option>
+        </select> 
+    </div>
+    <div id="footer">
+        <p id="date"></p>
+    </div>
+    
+    <script type="text/javascript" src="adhaanclock.js"></script>
+</body>
+</html>
