@@ -7,10 +7,9 @@ function realtimeClock() {
     minute = checkTime(minute);
     second = checkTime(second);
 
-    var hourPazar = hour + 1 ;
-    //document.getElementById("time").innerHTML = hour + ":" + minute + ":" + second;
-    //display hourPazar when displaying Pazar
+    var hourPazar = hour + 2;
     var location = document.getElementById("selection").value;
+
     if (location == "city=Pazar&country=Turkey") {
         document.getElementById("time").innerHTML = hourPazar + ":" + minute + ":" + second;
     }
@@ -41,7 +40,7 @@ function adhaanclock() {
     document.getElementById("date").innerHTML = monthInWord + " " + day + ", " + year;
 
     // Activate Real time clock
-    var t  = setInterval(realtimeClock, 500);
+    setInterval(realtimeClock, 500);
 
     //the hard part of the code
     const request = new XMLHttpRequest();
